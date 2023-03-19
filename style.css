@@ -1,0 +1,205 @@
+body {
+  background: url(image/background.jpg) no-repeat center center fixed ;
+  background-size: cover;
+  -webkit-background-size: cover; 
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  overflow-x: hidden;
+  font-family: Monospace;
+  width: 100%;
+    }
+.game__score{
+  font-size: 16px;
+  padding: 10px;
+  width: 60%;
+  position: absolute;
+  top: -10px;
+  left: -7px;
+ }
+#gameLogo{
+  width: 100%;
+  margin-bottom: -10px;
+}
+#gameMenu{
+  text-align: center;
+}
+#gameTitle{
+  font-size: 40px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  color: purple;
+  text-shadow: 2px 2px #d7f970;
+  margin-bottom: -20px;
+}
+.menuList{
+  text-decoration: none;
+  font-size: 30px;
+  color: #d7f970;
+  width: 70%;
+  background-color: #10872d;
+  margin: 0 30px 20px 50px;
+  display: block;
+  border-radius: 20px;
+  font-family: Monospace;
+}
+.menuList:hover{
+  background-color: purple;
+}
+#info{
+  margin: 30px;
+}
+#info p{
+  position: relative;
+  text-align: center;
+  color: purple;
+  font-size: 20px;
+  font-weight: bold;
+}
+#back{
+  text-decoration: none;
+  font-size: 40px;
+}
+.tip{
+  border-radius: 20px 0;
+  background: url(image/background.jpg) no-repeat center center fixed ;
+}
+
+.snake__game {
+  display: block;
+    }
+
+.points {
+  border: 10px solid green;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: #99CC33;
+  font-family: Monospace;
+    }
+
+.gameover{
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  padding: 10px;
+  width: 50%;
+  display: none;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #99CC33;
+  font-size: 30px;
+  font-style: italic;
+    }
+ #snake{
+  width: 100%;
+  height: auto;
+    }
+    
+    /** Directional controls **/
+ .left_right{
+   font-size: 70px;
+   color: green;
+   position: relative;
+   margin-right: 50px;
+   margin-bottom: -45px;
+   left: 0.9em;
+   top: -10px;
+   background: none;
+   border: none;
+ }
+ .up_down{
+   display: block;
+   color: green;
+   font-size: 70px;
+   position: relative;
+   left: 2.1em;
+   top: 5px;
+   background: none;
+   border: none;
+   margin: -20px;
+ }
+ button:active{
+   color: purple;
+ }
+
+/** select levels **/
+#selectLevel{
+  position: absolute;
+  top: 10px;
+  left: 65%;
+}
+#level{
+  position: absolute;
+  top: 0;
+  left: 10px;
+  width: 100px;
+  font-size: 25px;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  background: green;
+  color: white;
+}
+#level:active {
+  background-color: #99CC33;
+}
+#level_list{
+  position: absolute;
+  display: none;
+  left: 10px;
+  width: 90px;
+  top: 20px;
+  font-size: 20px;
+  background-color: #99CC33;
+  list-style-type: none;
+  padding: 5px;
+  border: 2px solid green;
+}
+#level_list li {
+  border-bottom: 2px solid green;
+}
+#level_list li:hover{
+  background-color: purple;
+}
+
+/** Pause & Play **/
+#pause{
+  top: -4.5em;
+  left: 0.6em;
+}
+#play{
+  left: 3.5em;
+  top: -4.5em;
+}
+#play:active{
+  color: red;
+}
+#pause, #play, #exit, #help{
+  position: relative;
+  font-size: 50px;
+  background: none;
+  border: none;
+  color: purple;
+}
+#exit{
+  left: 3em;
+  bottom: 2em;
+  color: red !important;
+  font-size: 40px !important;
+}
+#help{
+  bottom: 2em;
+  left: -4.5em;
+  font-size: 40px !important;
+}
+
+/** Highest score **/
+#highestScore{
+  border: 10px solid green;
+  font-size: 20px;
+  font-family: Monospace;
+  font-weight: bold;
+  padding: 5px;
+  margin-top: -1.5em;
+  border-radius: 20px;
+}

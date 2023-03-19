@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Snake Adventure Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="shortcut icon" href="image/icon.ico">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://kit.fontawesome.com/126c863153.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+	<div class="snake__game">
+		<div class="game__canvas">
+			<canvas id= "snake" height="608" width="608"></canvas>
+		</div>
+<div id="selectLevel">
+  <ul id="level_list">
+    <li onclick="lvl1()">Level 1</li>
+    <li onclick="lvl2()">Level 2</li>
+    <li onclick="lvl3()">Level 3</li>
+  </ul>
+  <button onclick="selectLvl()" id="level" type="submit">↕️Level</button>
+</div>
+		<div class="game__score">
+			<div id="scoring" class="points">Score: 0</div>
+		</div>
+
+		<div id="end" class="gameover" style="color:red;"></div>
+	</div>
+	
+<button class="up_down" onclick="up()"><i class="fa-sharp fa-solid fa-circle-up"></i></button>
+<button class="left_right" onclick="left()"><i class="fa-sharp fa-solid fa-circle-left"></i></button>
+<button class="left_right" onclick="right()"><i class="fa-sharp fa-solid fa-circle-right"></i></button>
+<button class="up_down" onclick="down()"><i class="fa-sharp fa-solid fa-circle-down"></i></button>
+<button id="pause" onclick="pause()" type="submit"><i class="fa-solid fa-circle-pause"></i></button>
+<button id="play" onclick="play()" type="submit"><i class="fa-solid fa-circle-play"></i></button>
+<button id="exit" onclick="exit()" type="submit"><i class="fa-solid fa-house"></i></button>
+  <button id="help" onclick="document.getElementById('id01').style.display='block'">❓</button>
+
+<div id="highestScore">
+
+</div>
+	
+	
+	<div class="w3-container" style="text-align:center">
+
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom tip">
+
+      <div class="w3-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topright" title="Close Modal">❌</span>
+      </div>
+
+        <div class="w3-section">
+<p style="color: purple; 
+font-weight: bold; 
+padding: 20px; 
+font-family: monospace;
+font-size: 20px">⛔ If you experience any glitch or errors, or you can't find the controls, switch on your internet connection and restart the game</p>
+      
+ 
+          
+        </div>
+      
+
+      </div>
+    </div>
+  </div>
+           
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
